@@ -315,7 +315,11 @@ section + section { border-top: 1px solid var(--rule); }
 }
 
 .portrait {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
   aspect-ratio: 3 / 4;
+  object-fit: cover;
   background:
     radial-gradient(circle at 30% 20%, rgba(214,40,40,0.22), transparent 55%),
     radial-gradient(circle at 80% 90%, rgba(255,193,7,0.28), transparent 60%),
@@ -540,3 +544,11 @@ form { display: flex; flex-direction: column; gap: 1.3rem; }
 }
 .btn-fill span { transition: transform 0.15s ease; display: inline-block; }
 .btn-fill:hover span { transform: translateX(3px); }
+
+.hero .portrait {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
