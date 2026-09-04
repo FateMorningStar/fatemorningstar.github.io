@@ -67,9 +67,6 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
-/* ===========================================================
-   Nav
-   =========================================================== */
 .nav {
   position: sticky;
   top: 0;
@@ -127,9 +124,6 @@ img { max-width: 100%; display: block; }
 .nav__toggle,
 .nav__toggle-input { display: none; }
 
-/* ===========================================================
-   Hero
-   =========================================================== */
 .hero {
   padding: 5.5rem 0 4rem;
   border-bottom: 1px solid var(--rule);
@@ -189,9 +183,6 @@ img { max-width: 100%; display: block; }
 
 .btn--ghost:hover { background: transparent; color: var(--text); border-color: var(--text-dim); }
 
-/* ===========================================================
-   Sections
-   =========================================================== */
 section { padding: 4.5rem 0; }
 section + section { border-top: 1px solid var(--rule); }
 
@@ -211,9 +202,6 @@ section + section { border-top: 1px solid var(--rule); }
   margin: 0.4rem 0 0;
 }
 
-/* ===========================================================
-   Ledger rows (skills, links, index lists)
-   =========================================================== */
 .ledger { list-style: none; margin: 0; padding: 0; }
 
 .ledger li {
@@ -244,9 +232,6 @@ section + section { border-top: 1px solid var(--rule); }
   color: var(--text-dim);
 }
 
-/* ===========================================================
-   Work grid
-   =========================================================== */
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -304,9 +289,6 @@ section + section { border-top: 1px solid var(--rule); }
   border-bottom: 1px solid var(--accent);
 }
 
-/* ===========================================================
-   About page specifics
-   =========================================================== */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -351,9 +333,6 @@ blockquote {
   margin: 2rem 0;
 }
 
-/* ===========================================================
-   Contact page specifics
-   =========================================================== */
 .contact-email {
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 5vw, 2.8rem);
@@ -404,9 +383,6 @@ form { display: flex; flex-direction: column; gap: 1.3rem; }
   margin-top: -0.5rem;
 }
 
-/* ===========================================================
-   Footer
-   =========================================================== */
 .footer {
   padding: 3rem 0 4rem;
   text-align: center;
@@ -422,10 +398,7 @@ form { display: flex; flex-direction: column; gap: 1.3rem; }
 
 .footer a { color: var(--accent); text-decoration: none; }
 
-/* ===========================================================
-   Responsive
-   =========================================================== */
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .work-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
@@ -546,7 +519,7 @@ form { display: flex; flex-direction: column; gap: 1.3rem; }
 .btn-fill:hover span { transform: translateX(3px); }
 
 .hero .portrait {
-  width: 600px;
+  width: 400px;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
