@@ -6,7 +6,7 @@ A personal portfolio website built with plain HTML and CSS, hosted on GitHub Pag
 # About:
 
 This is my personal site as a BS Computer Science student — built with HTML/CSS
-fundamentals and host a simple portfolio of my info, skills, and social links.
+fundamentals and host a portfolio of my info, skills, and social links.
 
 # Pages:
 
@@ -15,12 +15,6 @@ fundamentals and host a simple portfolio of my info, skills, and social links.
 - **Work** (`work.html`) — Selected work / projects
 - **Contact** (`contact.html`) — Social links and email
 
-# Built With:
-
-- HTML5
-- CSS3 (custom properties / variables, Flexbox, Grid)
-- Vanilla JavaScript (mobile nav menu)
-- [Google Fonts](https://fonts.google.com/) — Fraunces, Inter, JetBrains Mono
 
 # The Project Structure:
 ├── index.html
