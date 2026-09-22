@@ -14,12 +14,14 @@ fundamentals and host a portfolio of my info, skills, and social links.
 - **About** (`about.html`) — Bio, skills, and quick info card
 - **Work** (`work.html`) — Selected work / projects
 - **Contact** (`contact.html`) — Social links and email
-
+- **Budget tracker** (`budget-tracker.html`) - budget tracker
+(why Is a budget tracker doing here exactly? for educational purposes only)
 
 # The Project Structure:
 ├── index.html
 ├── about.html
 ├── work.html
+├── budget-tracker.html
 ├── contact.html
 ├── style.css
 ├── js/
