@@ -158,7 +158,6 @@
 
     <header class="site-header">
       <div class="nav-wrap">
-
         <a class="brand" href="index.html">
           <span class="brand-mark">AV</span>
           <span>Andrei Vincent P. Padillo</span>
@@ -166,7 +165,6 @@
 
         <nav class="desktop-nav" aria-label="Primary navigation">
           <div class="dropdown">
-
             <button
               class="nav-link dropdown-toggle"
               id="dropdownBtn"
@@ -184,7 +182,6 @@
               <li><a href="budget-tracker.html">Budget Tracker <span>↗</span></a></li>
               <li><a href="contact.html">Contacts <span>↗</span></a></li>
             </ul>
-
           </div>
         </nav>
 
@@ -196,13 +193,10 @@
           aria-label="Open navigation menu">
           ☰
         </button>
-
       </div>
-
+      
       <nav class="mobile-menu" data-mobile-menu aria-label="Mobile navigation">
-
         <div class="mobile-dropdown">
-
           <button
             class="mobile-dropdown-toggle"
             id="mobileDropdownBtn"
@@ -220,94 +214,67 @@
             <li><a href="budget-tracker.html">Budget Tracker <span>↗</span></a></li>
             <li><a href="contact.html">Contacts <span>↗</span></a></li>
           </ul>
-
         </div>
-
       </nav>
     </header>
 
-
     <main>
-
       <section class="budget-section">
-
         <div class="container">
-
           <div class="budget-heading">
-
             <div class="eyebrow">04 / Budget Tracker</div>
-
             <h1>
               Track your <em>budget.</em>
             </h1>
-
             <p>
               Enter your total amount, add your expenses, and keep track
               of the amount you have remaining.
             </p>
-
           </div>
 
 
           <div class="budget-box">
-
             <label class="budget-label" for="salary">
               Total Amount / Salary
             </label>
-
             <input
               class="budget-input"
               type="number"
               id="salary"
               placeholder="Enter total amount"
-              min="0"
-            >
-
+              min="0">
 
             <label class="budget-label">
               Expenses
             </label>
-
             <div id="expenseList" class="expense-list"></div>
-
             <button id="addExpense" class="add-expense" type="button">
               + Add Expense
             </button>
 
-
             <div class="budget-footer">
-
               <span class="remaining-label">
                 Remaining Amount
               </span>
-
               <span class="remaining-amount">
                 ₱<span id="total">0.00</span>
               </span>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
-
     </main>
-
 
     <footer class="footer">
       <div class="container footer-inner">
         <p>
           © <span data-year></span> Andrei Vincent P. Padillo
         </p>
-
         <span class="mono-label">
           Made while learning / Tangub City
         </span>
       </div>
     </footer>
-
 
     <script src="script.js"></script>
 
@@ -372,13 +339,10 @@
             saveButton.disabled = true;
 
           }
-
         });
-
       });
       // Update total when salary changes
       salaryInput.addEventListener("input", updateTotal);
     </script>
-
   </body>
 </html>
