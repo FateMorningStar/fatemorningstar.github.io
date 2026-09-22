@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .expense {
+            display: flex;
+            gap: 5px;
+        }
+
+        .expense input {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #333;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Budget Tracker</h1>
+
+    <label>Total Amount / Salary:</label>
+    <input type="number" id="salary" placeholder="Enter total amount">
+
+    <h3>Expenses</h3>
+
+    <div id="expenseList"></div>
+
+    <button id="addExpense">Add Expense</button>
+
+    <footer>
+        Remaining Amount: ₱<span id="total">0.00</span>
+    </footer>
+
+    <script>
+        const salaryInput = document.getElementById("salary");
+        const expenseList = document.getElementById("expenseList");
+        const addExpenseButton = document.getElementById("addExpense");
+        const totalDisplay = document.getElementById("total");
+
+        let totalExpenses = 0;
+
+        // Add a new expense input
+        addExpenseButton.addEventListener("click", function () {
+
+            const expenseDiv = document.createElement("div");
+            expenseDiv.className = "expense";
+
+            const expenseInput = document.createElement("input");
+            expenseInput.type = "number";
+            expenseInput.placeholder = "Enter expense amount";
+
+            const saveButton = document.createElement("button");
+            saveButton.textContent = "Save";
+
+            expenseDiv.appendChild(expenseInput);
+            expenseDiv.appendChild(saveButton);
+            expenseList.appendChild(expenseDiv);
+
+            // Save expense
+            saveButton.addEventListener("click", function () {
+
+                const expense = Number(expenseInput.value);
+
+                if (expense > 0) {
+                    totalExpenses += expense;
+
+                    updateTotal();
+
+                    expenseInput.disabled = true;
+                    saveButton.disabled = true;
+                }
+            });
+        });
+
+        // Update remaining amount
+        function updateTotal() {
+            const salary = Number(salaryInput.value) || 0;
+            const remaining = salary - totalExpenses;
+
+            totalDisplay.textContent = remaining.toFixed(2);
+        }
+
+        // Update when salary is entered
+        salaryInput.addEventListener("input", updateTotal);
+    </script>
+
+</body>
+</html>
